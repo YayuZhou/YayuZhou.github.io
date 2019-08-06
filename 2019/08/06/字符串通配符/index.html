@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="剑指offer,">
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta name="keywords" content="机器学习、深度学习、自然语言处理">
-<meta property="og:type" content="website">
-<meta property="og:title" content="夏天">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="题目：请实现一个函数用来匹配包括’.’和’‘的正则表达式。模式中的字符’.’表示任意一个字符，而’‘表示它前面的字符可以出现任意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串”aaa”与模式”a.a”和”abaca”匹配，但是与”aa.a”和”ab*a”均不匹配 思路： 每次从字符串里拿出一个字符和模式中的字符去匹配。如果模式中的字符ch是“.” ，那么它可以匹配字">
+<meta name="keywords" content="剑指offer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字符串通配符">
+<meta property="og:url" content="http://yoursite.com/2019/08/06/字符串通配符/index.html">
 <meta property="og:site_name" content="夏天">
+<meta property="og:description" content="题目：请实现一个函数用来匹配包括’.’和’‘的正则表达式。模式中的字符’.’表示任意一个字符，而’‘表示它前面的字符可以出现任意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串”aaa”与模式”a.a”和”abaca”匹配，但是与”aa.a”和”ab*a”均不匹配 思路： 每次从字符串里拿出一个字符和模式中的字符去匹配。如果模式中的字符ch是“.” ，那么它可以匹配字">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-06T08:05:16.110Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="夏天">
+<meta name="twitter:title" content="字符串通配符">
+<meta name="twitter:description" content="题目：请实现一个函数用来匹配包括’.’和’‘的正则表达式。模式中的字符’.’表示任意一个字符，而’‘表示它前面的字符可以出现任意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串”aaa”与模式”a.a”和”abaca”匹配，但是与”aa.a”和”ab*a”均不匹配 思路： 每次从字符串里拿出一个字符和模式中的字符去匹配。如果模式中的字符ch是“.” ，那么它可以匹配字">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/06/字符串通配符/">
 
 
 
 
 
-  <title>夏天</title>
+  <title>字符串通配符 | 夏天</title>
   
 
 
@@ -141,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,140 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/06/剑指offer子结构/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhou yayu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夏天">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/06/剑指offer子结构/" itemprop="url">子结构问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-06T15:21:23+08:00">
-                2019-08-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>题目描述：</p>
-<p>输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）</p>
-<p>思路：设A的根节点是root1，B的根节点是root2</p>
-<p>先比较root1和root2是否相等，如果不等，看root2是否是root1左子树或右子树的子结构。</p>
-<p>怎么判断是否是子结构呢？</p>
-<p>从开始节点进行比较，若相等，继续比较左右节点是否相等。若都比较完了，还一直相等，则是子结构。</p>
-<p>若不等，则B不是A的子结构</p>
-<p>实现代码：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">HasSubtree</span><span class="params">(TreeNode root1,TreeNode root2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root2==<span class="keyword">null</span>||root1==<span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> isSubtree(root1,root2)||isSubtree(root1.left,root2)||isSubtree(root1.right,root2);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isSubtree</span><span class="params">(TreeNode root1,TreeNode root2)</span></span>&#123;</span><br><span class="line">        <span class="comment">//如果root2遍历完了，且都相等，则是子结构</span></span><br><span class="line">        <span class="keyword">if</span>(root2==<span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="comment">//如果root1遍历完了，root2还没完，肯定不是子结构</span></span><br><span class="line">        <span class="keyword">if</span>(root1==<span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">if</span>(root1.val!=root2.val)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> isSubtree(root1.left,root2.left)&amp;&amp;isSubtree(root1.right,root2.right);</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>题目描述：</p>
-<p>输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否可能为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如序列1,2,3,4,5是某栈的压入顺序，序列4,5,3,2,1是该压栈序列对应的一个弹出序列，但4,3,5,1,2就不可能是该压栈序列的弹出序列。（注意：这两个序列的长度是相等的）</p>
-<p>分析：本题考查对栈的理解。建立一个辅助栈，然后按照第一个数组顺序出栈，第二数组的顺序来模拟出栈。具体步骤：模拟出栈序列，比如：4,5,3,2,1。4先出栈，说明1,2,3,4都进入栈了，4出完后栈顶是3，此时要保证出栈是5的话，就要把剩下的数入栈，直到5为止，这时栈顶就变为5了。此时可以出栈。如果后面的序列都扫描完了，还没有5.那说明出栈序列不对。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -378,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/06/字符串通配符/" itemprop="url">字符串通配符</a></h1>
+          <h1 class="post-title" itemprop="name headline">字符串通配符</h1>
         
 
         <div class="post-meta">
@@ -430,9 +300,7 @@
       
 
       
-        
-          
-            <p>题目：请实现一个函数用来匹配包括’.’和’<em>‘的正则表达式。模式中的字符’.’表示任意一个字符，而’</em>‘表示它前面的字符可以出现任意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串”aaa”与模式”a.a”和”ab<em>ac</em>a”匹配，但是与”aa.a”和”ab*a”均不匹配</p>
+        <p>题目：请实现一个函数用来匹配包括’.’和’<em>‘的正则表达式。模式中的字符’.’表示任意一个字符，而’</em>‘表示它前面的字符可以出现任意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串”aaa”与模式”a.a”和”ab<em>ac</em>a”匹配，但是与”aa.a”和”ab*a”均不匹配</p>
 <p>思路：</p>
 <p>每次从字符串里拿出一个字符和模式中的字符去匹配。如果模式中的字符ch是“.” ，那么它可以匹配字符串中的任意字符。如果模式中的字符ch不是“.” ，而且字符串中的字符也是ch，那么他们相互匹配。当它们相互匹配时接着匹配后面的字符。</p>
 <p>档模式中的第二个字符不是“*”时，问题要简单很多。如果字符串中的第一个字符和模式中的第一个字符相配，那么在字符串中和模式串上都向后移动一位，然后匹配剩余的字符串和模式。如果字符串中的第一个字符和模式中的第一个字符不匹配，直接返回false。</p>
@@ -444,8 +312,6 @@
 <p>代码实现：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">match</span><span class="params">(<span class="keyword">char</span>[] str, <span class="keyword">char</span>[] pattern)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">if</span> (str == <span class="keyword">null</span> || pattern == <span class="keyword">null</span>) &#123;</span><br><span class="line">           <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">int</span> strIndex = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">int</span> patternIndex = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">return</span> matchCore(str, strIndex, pattern, patternIndex);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">matchCore</span><span class="params">(<span class="keyword">char</span>[] str, <span class="keyword">int</span> strIndex, <span class="keyword">char</span>[] pattern, <span class="keyword">int</span> patternIndex)</span> </span>&#123;</span><br><span class="line">       <span class="comment">//有效性检验：str到尾，pattern到尾，匹配成功</span></span><br><span class="line">       <span class="keyword">if</span> (strIndex == str.length &amp;&amp; patternIndex == pattern.length) &#123;</span><br><span class="line">           <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//pattern先到尾，匹配失败</span></span><br><span class="line">       <span class="keyword">if</span> (strIndex != str.length &amp;&amp; patternIndex == pattern.length) &#123;</span><br><span class="line">           <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//模式第2个是*，且字符串第1个跟模式第1个匹配,分3种匹配模式；如不匹配，模式后移2位</span></span><br><span class="line">       <span class="keyword">if</span> (patternIndex + <span class="number">1</span> &lt; pattern.length &amp;&amp; pattern[patternIndex + <span class="number">1</span>] == <span class="string">'*'</span>) &#123;</span><br><span class="line">           <span class="keyword">if</span> ((strIndex != str.length &amp;&amp; pattern[patternIndex] == str[strIndex]) || (pattern[patternIndex] == <span class="string">'.'</span> &amp;&amp; strIndex != str.length)) &#123;</span><br><span class="line">               <span class="keyword">return</span> matchCore(str, strIndex, pattern, patternIndex + <span class="number">2</span>)<span class="comment">//模式后移2，视为x*匹配0个字符</span></span><br><span class="line">                       || matchCore(str, strIndex + <span class="number">1</span>, pattern, patternIndex + <span class="number">2</span>)<span class="comment">//视为模式匹配1个字符</span></span><br><span class="line">                       || matchCore(str, strIndex + <span class="number">1</span>, pattern, patternIndex);<span class="comment">//*匹配1个，再匹配str中的下一个</span></span><br><span class="line">           &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">               <span class="keyword">return</span> matchCore(str, strIndex, pattern, patternIndex + <span class="number">2</span>);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//模式第2个不是*，且字符串第1个跟模式第1个匹配，则都后移1位，否则直接返回false</span></span><br><span class="line">       <span class="keyword">if</span> ((strIndex != str.length &amp;&amp; pattern[patternIndex] == str[strIndex]) || (pattern[patternIndex] == <span class="string">'.'</span> &amp;&amp; strIndex != str.length)) &#123;</span><br><span class="line">           <span class="keyword">return</span> matchCore(str, strIndex + <span class="number">1</span>, pattern, patternIndex + <span class="number">1</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -460,142 +326,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/27/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhou yayu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夏天">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/27/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-27T19:46:26+08:00">
-                2019-03-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/剑指offer/" rel="tag"># 剑指offer</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/27/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/06/剑指offer子结构/" rel="prev" title="子结构问题">
+                子结构问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -605,10 +369,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -616,6 +381,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -821,6 +590,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
